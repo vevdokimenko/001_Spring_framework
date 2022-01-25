@@ -1,1 +1,7 @@
 /target/
+/1lesson.iml
+/.idea/
+/src/test/
+/src/main/java/no_spring/
+/src/main/java/spring/
+/src/main/resources/context.xml

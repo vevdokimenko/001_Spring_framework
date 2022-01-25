@@ -1,2 +1,4 @@
-package practice.interfaces;public interface Tire {
+package practice.interfaces;
+
+public interface Tire {
 }

@@ -1,0 +1,23 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="forte" class="practice.impl.engine.Forte"/>
+    <bean id="vitals" class="practice.impl.engine.Vitals"/>
+    <bean id="premiorry" class="practice.impl.tire.Premiorry"/>
+    <bean id="rosava" class="practice.impl.tire.Rosava"/>
+    <bean id="ford" class="practice.impl.car.Car" scope="prototype">
+        <constructor-arg ref="premiorry"/>
+        <constructor-arg ref="forte"/>
+        <constructor-arg value="Ford"/>
+    </bean>
+    <bean id="mazda" class="practice.impl.car.Car" scope="prototype">
+        <constructor-arg ref="rosava"/>
+        <constructor-arg ref="vitals"/>
+        <constructor-arg value="Mazda"/>
+    </bean>
+
+
+
+</beans>

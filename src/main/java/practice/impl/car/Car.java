@@ -1,23 +1,24 @@
 package practice.impl.car;
 
-import practice.interfaces.Car;
 import practice.interfaces.Engine;
 import practice.interfaces.Tire;
 
-public class Ford implements Car {
+public class Car implements practice.interfaces.Car {
     private Engine engine;
     private Tire tire;
+    private String name;
 
-    public Ford() {
+    public Car() {
     }
 
-    public Ford(Engine engine, Tire tire) {
+    public Car(Engine engine, Tire tire, String name) {
         this.engine = engine;
         this.tire = tire;
+        this.name = name;
     }
 
     public void start() {
-        System.out.println("Audi starts...");
+        System.out.println(name + " starts...");
     }
 
     public Engine getEngine() {
@@ -34,5 +35,13 @@ public class Ford implements Car {
 
     public void setTire(Tire tire) {
         this.tire = tire;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

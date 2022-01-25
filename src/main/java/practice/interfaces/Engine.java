@@ -1,2 +1,4 @@
-package practice.interfaces;public class Engine {
+package practice.interfaces;
+
+public interface Engine {
 }

@@ -1,2 +1,4 @@
-package practice.interfaces;public interface Car {
+package practice.interfaces;
+
+public interface Car {
 }
